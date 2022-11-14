@@ -95,7 +95,7 @@ async function getRecipes() {
   //            take two parameters - resolve, and reject. These are functions
   //            you can call to either resolve the Promise or Reject it.
     return new Promise(async(resolve, reject) =>{
-      for(i =0; i< RECIPE_URLS.length; i++){
+      for(let i =0; i< RECIPE_URLS.length; i++){
         let urls = RECIPE_URLS[i]
         try{
           let getThigns = await fetch(urls)
